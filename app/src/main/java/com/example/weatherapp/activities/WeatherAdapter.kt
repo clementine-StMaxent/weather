@@ -8,11 +8,12 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.weatherapp.R
 
 class WeatherAdapter (val dataSet: ArrayList<Weather>, val context: Context):
     RecyclerView.Adapter<WeatherAdapter.ViewHolder>() {
 
-    class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
+    class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val textNom: TextView
         val textPrenom: TextView
         val deleteButton: ImageView
@@ -25,3 +26,4 @@ class WeatherAdapter (val dataSet: ArrayList<Weather>, val context: Context):
             editButton = view.findViewById(R.id.edit_button)
         }
     }
+}
