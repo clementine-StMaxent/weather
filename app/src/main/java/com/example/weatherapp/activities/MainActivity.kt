@@ -6,7 +6,7 @@ import com.example.weatherapp.activities.models.weathers
 import com.example.weatherapp.activities.services.WeatherHTTPClient
 
 class WeatherActivity : AppCompatActivity() {
-    val weatherhtppclient = WeatherHTTPClient(this)
+    val weatherHTTPClient = WeatherHTTPClient(this)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -16,14 +16,15 @@ class WeatherActivity : AppCompatActivity() {
 
           //  }
          //   }
-            weatherhtppclient.findWeatherFromCity(cityName= "Paris", this::onResponse)
+        weatherHTTPClient.findWeatherFromCity(cityName= "Paris", this::onResponse)
         }
 
     fun onResponse(weathers: weathers) {
         println(weathers)
     }
+    fun afficherWeather(){
+        println()
     }
-
-fun afficherWeather(){
-    println()
 }
+
+
