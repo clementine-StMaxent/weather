@@ -22,8 +22,8 @@ class WeatherActivity : AppCompatActivity() {
     fun onResponse(weathers: weathers) {
         println(weathers)
     }
+    }
 
-    fun afficherWeather(){
-        println(arrayListOf(weatherhtppclient))
-    }
-    }
+fun afficherWeather(){
+    println()
+}

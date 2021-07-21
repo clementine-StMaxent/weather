@@ -27,9 +27,11 @@ class WeatherHTTPClient {
             { error -> /*onError.onError(Gson().fromJson(onError))*/}        //onError
         )
 
-        request.headers["x-rapidapi-key"] = "774d1a930fmshd20347120295743p1fa0b9jsndb0ef368977a"
-        request.headers["x-rapidapi-host"] = "community-open-weather-map.p.rapidapi.com"
+        request.headers.put("x-rapidapi-key","774d1a930fmshd20347120295743p1fa0b9jsndb0ef368977a")
+        request.headers.put("x-rapidapi-host","community-open-weather-map.p.rapidapi.com")
     }
 }
+
+
 
 typealias OnSuccessWeather = (weathers) -> Unit
